@@ -314,7 +314,7 @@ namespace SortVisualizer
 
             //Render Text
 
-            string s = "Method: " + algorithmData.Name + "   " + "Array Accesses: " + algorithmData.Access + "   " + "Comparisons: " + algorithmData.Compare + "   " + "Wait Time: " + timeout + "ms" + "   " + "Real Time: " + RealTimeElapsedMillies() + "ms";
+            string s = "Method: " + algorithmData.Name + "   " + "Array Accesses: " + algorithmData.Access + "   " + "Comparisons: " + algorithmData.Compare;
 
             g.DrawString(s, new Font(FontFamily.GenericMonospace,9), new SolidBrush(Color.White), 5,5);
 

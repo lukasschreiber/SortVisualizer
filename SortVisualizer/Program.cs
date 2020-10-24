@@ -23,7 +23,22 @@ namespace SortVisualizer
             Application.EnableVisualStyles();
             //Console.SetWindowSize((int)Math.Round(Console.WindowWidth*1.5f), Console.WindowHeight);
 
-            //Select Size
+            loop();
+
+             Console.WriteLine("Start again? [Y/N]");
+            if (Console.ReadLine().ToLower().Equals("y"))
+            {
+                loop();
+            }else{
+
+                //End
+                Essentials.Finalize();
+            }
+
+        }
+
+        static void loop(){
+        //Select Size
             Console.WriteLine("Choose Array Size: [Integer]");
 
             Console.ForegroundColor = ConsoleColor.Green;
@@ -63,8 +78,6 @@ namespace SortVisualizer
                     break;
                 case 5: Sorter.BogoSort(dataSet);
                     break;
-                case 6: Sorter.MergeSort(dataSet.ToArray());
-                    break;
                 default:Essentials.Error();
                     break;
             }
@@ -81,12 +94,9 @@ namespace SortVisualizer
                 }
             }
 
-
-            //End
-            Essentials.Finalize();
-
-        }
-
+    }
        
     }
+
+    
 }
