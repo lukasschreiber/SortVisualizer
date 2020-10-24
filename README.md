@@ -1,5 +1,7 @@
 # SortVisualizer #
 
+#### Achtung: da ich das Programm zur Abiturvorbereitung sehr schnell geschrieben habe ist der Code nicht besonders ordentlich und nicht dokumentiert. Durch die kleine Programmgröße sollte es aber einfach sein sich einzuarbeiten. Wenn Interesse besteht kommentiere ich den Code noch nachträglich.
+
 Erst muss die größe des zu sortierenden Arrays festgelegt werden:
 
  > < 256 visualisierbar
